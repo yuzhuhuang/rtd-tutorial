@@ -5,11 +5,9 @@ build:
   tools:
     python: "3.9"
 
-sphinx:
-  fail_on_warning: true
-  
 python:
-# Install our python package before building the docs
-install:
-  - method: pip
-    path: .
+  version: "3.9"
+  # Install our python package before building the docs
+  install:
+    - method: pip
+      path: .
